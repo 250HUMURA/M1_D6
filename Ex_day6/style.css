@@ -23,8 +23,8 @@ img.card {
 
 }
 
-.container:hover .card{
-    opacity: 0.5;
+.container:hover {
+    opacity: 0.7;
 }
 .top_right {
     width: 27%;
@@ -124,10 +124,12 @@ img.card {
 .down_navbar2:hover {
     background-color: white;
 }
-.par2{
-    width: 80%;
+.fa-arrow-up-from-bracket{
+    font-size: 40px;
     position: absolute;
-    right: 5px;
+    right: 8px;
+    top: 5px;
+
     
 }
 
@@ -139,20 +141,17 @@ img.card {
 
     position: relative;
 
-    
-    cursor: pointer;
+    overflow: hidden;
 }
 .down_navbar3:hover {
     background-color: white;
 }
-.par3{
-    font-size: 40px;
-    font-weight: bold;
-
+.fa-ellipsis{
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    top: 12px;
+    left: 10px;
 
 }
 
