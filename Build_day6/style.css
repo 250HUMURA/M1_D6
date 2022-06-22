@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    object-fit: cover;
+}
+body{
+    background-color: rgb(219, 219, 219) ;
+    
+}
+.logo{
+    background-color: rgb(35, 47, 62);
+}
+.logo-img{
+    padding-bottom: 20px;
+    width: 10rem;
+}
+.main-tab{
+    background-color: rgb(53, 70, 92);
+    color: white;
+    display: flex;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    overflow: hidden;    /*the added element to fix navbar at the top when we scroll up*/
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+.menu {
+    padding-inline: 10px;
+}
+.container{
+    margin: 20px;
+}
+.tab{
+    text-align: center;
+    background-color: rgb(247, 91, 35);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: Arial ;
+    width: 100%;
+}
+.notice{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Guides{
+    background-image: url(./bg-image.png);
+    background-size: cover;
+    text-align: center;
+    height: 250px;
+    color: white;
+    padding: 50px;
+    margin-bottom: 20px;
+    
+
+}
+.Guides-act{
+    display: flow-root;
+    font-size: 60%;
+    padding-top: 20px;
+}
+.content1{
+    background-color: white;
+    height: 500px;
+    
+}
+.find{
+    font-weight: bold;
+    font-size: 150%;
+    margin: 30px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.shop{
+    color: rgb(80, 134, 95);
+    font-size: 80%;
+    font-weight: 900;
+    padding-left: 15px;
+}
+.image-container{
+    margin: 20px;
+    text-align: center;
+    
+}
+.find-shop{
+      width: 300px;
+      height: 400px;
+      border-radius: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-left: 40px;
+      box-shadow: 10px 10px 10px 10px rgb(240, 239, 239);
+}
+.findshop_wrap2{  /* created new id in order to be able to overlay image*/
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 40px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor:pointer;
+}
+.find-shop1{
+      width: 300px;
+      height: 400px;
+      border-radius: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-left: 40px;
+
+      position: absolute;
+      right: -10px;
+      z-index: 1;
+      
+}
+
+.overlay{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    z-index: 3;
+
+}
+
+.like{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+    transform: translateY(-100px);
+    transition: transform 0.3s;
+}
+.downcart{
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    background-color: #117682;
+    color: white;
+
+    width: 80%;
+    height: 12%;
+    padding: 15px;
+
+    border-radius: 8px;
+    z-index: 3;
+ transform: translateY(-400px);
+        transition: transform 0.4s, opacity 0.4s;
+
+}
+.findshop_wrap2:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+
+}
+.findshop_wrap2:hover .like{
+    transform: translateY(0);
+    transition: .3s;
+
+}
+
+.findshop_wrap2:hover .downcart{
+    transform: translateY(0);
+        opacity: 1;
+}
+
+.findshop_wrap2:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: black;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.findshop_wrap2:hover::before {
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.find-shop1::before {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+
+}
+
+.games{
+    margin-top: 30px;
+    height: 480px;
+    text-align: center;
+    margin-top: 40px;
+}
+.games-image{
+    width: 100%;
+    height:450px ;
+}
+.play{
+    font-weight: bold;
+    font-size: 150%;
+    padding-right: 15px;
+}
+.play-games{
+    color: rgb(80, 134, 95);
+    font-size: 80%;
+    font-weight: 900;
+    padding-left: 15px;
+}
+.sound{
+    margin-top: 30px;
+    height: 480px;
+    text-align: center;
+}
+.sound-image{
+    width: 100%;
+    height:430px ;
+}
+.sound-cheer{
+    font-weight: bold;
+    font-size: 150%;
+    padding-right: 15px;
+}
+.audio{
+    color: rgb(80, 134, 95);
+    font-size: 80%;
+    font-weight: 900;
+    padding-left: 15px;
+}
+.back{
+    text-align: center;
+    background-color: rgb(53, 70, 92);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.anchor{
+    color: white;
+}
+
+.end{
+    background-color: rgb(35, 47, 62);
+    height: 180px;
+    
+}
+.end-image{
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 680px;
+}
+.block{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 30px;
+}
+.img_block {
+    background-color: white;
+    width:400px;
+    height: 500px;
+    margin-right: 20px;
+    align-items: baseline;
+    
+}
+.imageblock{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.upper_block{
+    width: 200px;
+    display: flex;
+    margin-left: 40px;
+}
+.lower_block{
+    width: 200px;
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+.title{
+    padding: 30px;
+    font-weight: bold;
+    font-size: 150%;
+}
+span{
+    font-weight: bold;
+}
+.glen{
+    text-align: ;
+    color:rgb(80, 134, 95) ;
+    padding: 30px;
+}
